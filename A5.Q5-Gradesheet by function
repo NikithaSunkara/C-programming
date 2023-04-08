@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h> 
+int main()
+{
+   int hindi=0,english=0,maths=0,science=0,computer=0,total;
+   float per=0;
+   printf("enter 5 subjects marks");
+   scanf("%d%d%d%d%d",&hindi,&english,&maths,&science,&computer);
+   total=hindi+english+maths+science+computer;
+   per=total/5;
+   if(hindi<50 || english<50 || maths<50 || science<50 || computer<50)
+   printf("student fail with total marks %d",total);
+   else
+   { 
+    if(per>=50 && per <60)
+    printf("C Grade total marks %d percentage=%f",total,per);
+   if(per>=60 && per<70)
+   printf("B Grade total marks=%d percentage=%f",total,per);
+   if(per>=70)
+   printf("A Grade total marks=%d percentage=%f",total,per);
+  }
+ }
